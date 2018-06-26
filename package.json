@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && webpack",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/tinifyphan/lupa/issues"
   },
-  "homepage": "https://github.com/tinifyphan/lupa#readme"
+  "homepage": "https://github.com/tinifyphan/lupa#readme",
+  "dependencies": {
+    "ts-loader": "^4.4.1",
+    "typescript": "^2.9.2",
+    "webpack": "^4.12.1",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "webpack-cli": "^3.0.8"
+  }
 }
